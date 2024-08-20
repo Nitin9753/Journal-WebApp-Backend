@@ -66,7 +66,7 @@ public class PublicController {
             UserDetails userDetails=userDetailService.loadUserByUsername(user.getUsername());
             String jwt=jwtUtil.generateToken(userDetails.getUsername());
             Map<String , String> result=new HashMap<>();
-            result.put("jwt", jwt);
+            result.put("token", jwt);
             return new ResponseEntity<>(result, HttpStatus.OK);
        }catch (Exception e){
            throw new RuntimeException("Error at login");
