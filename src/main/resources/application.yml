@@ -1,11 +1,11 @@
 spring:
   redis:
-    host: redis-17532.c212.ap-south-1-1.ec2.redns.redis-cloud.com
-    port: 17532
-    password: admin
+    host: localhost
+    port: 6379
   data:
     mongodb:
-      uri: mongodb+srv://nk:nk@cluster0.qtllmns.mongodb.net/compossoo
+      uri: localhost
+      port: 27017
       database: journalApp
       auto-index-creation: true
 
@@ -13,5 +13,5 @@ spring:
 
 weather:
   api:
-    key: 460fee5185498b3564a6024afcdf9552
+    key: api_key
 
